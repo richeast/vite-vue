@@ -8,8 +8,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "axios": "^0.24.0",
+    "element-plus": "^1.2.0-beta.5",
     "vue": "^3.2.16",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
@@ -19,6 +22,10 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
     "prettier": "2.5.1",
+    "sass": "^1.44.0",
+    "stylus": "^0.55.0",
+    "unplugin-auto-import": "^0.5.1",
+    "unplugin-vue-components": "^0.17.6",
     "vite": "^2.6.4"
   },
   "lint-staged": {

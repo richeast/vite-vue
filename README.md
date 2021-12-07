@@ -84,3 +84,38 @@ npm set-script prepare "husky install"
 npx husky add .husky/pre-commit "npx lint-staged" # 新增 pre-commit 钩子，提交前检查并格式化代码
 npx husky add .husky/commit-msg "node scripts/verifyCommit.js" # 新增 commit msg 钩子，规定提交信息的格式
 ```
+
+## 7、集成 css 编译器
+
+```bash
+# .scss and .sass
+npm install -D sass
+
+# .less
+npm install -D less
+
+# .styl and .stylus
+npm install -D stylus
+```
+
+## 8、集成 element-plus
+
+```bash
+npm install element-plus --save
+# 按需引入
+npm install -D unplugin-vue-components unplugin-auto-import
+```
+
+## 9、封装 Axios
+
+```bash
+npm install axios
+```
+
+## 10、安装 vuex
+
+```bash
+npm install vuex@next --save
+# 使用时
+# import { useStore } from 'vuex'; const store = useStore();
+```
