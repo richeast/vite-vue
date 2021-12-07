@@ -78,8 +78,9 @@ npm install --save-dev eslint-config-prettier
 ## 6、Git hooks
 
 ```bash
-npm install --save-dev husky lint-staged
-npx husky install
+npm install --save-dev husky lint-staged # 安装husky、lint-staged
+npx husky install # 初始化husky
 npm set-script prepare "husky install"
-npx husky add .husky/pre-commit "npx lint-staged"
+npx husky add .husky/pre-commit "npx lint-staged" # 新增 pre-commit 钩子，提交前检查并格式化代码
+npx husky add .husky/commit-msg "node scripts/verifyCommit.js" # 新增 commit msg 钩子，规定提交信息的格式
 ```
